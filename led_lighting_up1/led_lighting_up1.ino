@@ -1,6 +1,6 @@
 // C++ code
 //
-int sleeptime = 0;
+int sleeptime = 1000;
 
 void setup()
 {
@@ -11,17 +11,17 @@ void setup()
 
 void loop()
 {
-  sleeptime = 1;
+  
   digitalWrite(12, HIGH);
-  sleeptime = 1;
+ delay (sleeptime );
   digitalWrite(12, LOW);
-  sleeptime = 1;
+  delay (sleeptime );
   digitalWrite(10, HIGH);
-  sleeptime = 1;
+  delay (sleeptime) ;
   digitalWrite(10, LOW);
-  sleeptime = 1;
+  delay (sleeptime) ;
   digitalWrite(8, HIGH);
-  sleeptime = 1;
+  delay (sleeptime );
   digitalWrite(8, LOW);
-  delay(10); // Delay a little bit to improve simulation performance
+  delay(1000); // Delay a little bit to improve simulation performance
 }
